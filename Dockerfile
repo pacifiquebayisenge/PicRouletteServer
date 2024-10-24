@@ -2,7 +2,7 @@
 FROM node:18
 
 # Step 2: Remove node_modules and package-lock.json if they exist
-RUN rm -rf node_modules package-lock.json
+RUN rm -rf node_modules
 
 # Step 3: Clear the npm cache to avoid issues
 RUN npm cache clean --force
