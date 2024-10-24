@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN rm -rf node_modules package-lock.json
 
 # Step 5: Install the dependencies
-RUN npm install --production
+RUN npm install 
 
 # Step 6: Copy the rest of the application code
 COPY . .
