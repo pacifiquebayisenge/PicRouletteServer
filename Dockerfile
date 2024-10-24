@@ -11,7 +11,7 @@ RUN npm cache clean --force
 COPY . .
 
 # Step 5: Install the dependencies (use npm ci for clean installs)
-RUN npm install
+RUN npm ci
 
 # Step 6: Expose the port your app runs on (default is 3000, modify if needed)
 EXPOSE 3000
